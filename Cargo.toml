@@ -1,0 +1,18 @@
+[package]
+name = "mdbx-tui"
+version = "0.1.0"
+authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+edition = "2021"
+description = "TUI for MDBX storage engine"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = "1"
+cursive = { version = "0.16", default-features = false, features = [
+    "termion-backend",
+] }
+hex = "0.4"
+mdbx = { git = "https://github.com/vorot93/mdbx-rs" }
+once_cell = "1"
+structopt = "0.3"
+termion = "1"
